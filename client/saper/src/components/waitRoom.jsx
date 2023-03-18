@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import Saper from "./saper";
-// import io from 'socket.io-client';
-// const socket = io.connect("http://localhost:3001");
 
  const WaitRoom = (props) => {
 
