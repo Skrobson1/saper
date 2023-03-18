@@ -5,6 +5,13 @@ import io from 'socket.io-client';
 const socket = io.connect("https://saperserv.vercel.app/");
 
 function Select () {
+    const SOCKET_URL = "https://saperserv.vercel.app/";
+    socket.current = io(`${SOCKET_URL}`,{
+        withCredentials: true,
+        extraHeaders: {
+            "secretHeader": "secret value"
+        }
+    });
 
     const addPlayer = (p)=>{
         socket.emit("addPlayer", { type: p});

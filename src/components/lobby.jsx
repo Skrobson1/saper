@@ -8,7 +8,7 @@ const socket = io.connect("https://saperserv.vercel.app/");
 
 const Lobby = () => {
 
-    const SOCKET_URL = "https://fakeurl.org";
+    const SOCKET_URL = "https://saperserv.vercel.app/";
         socket.current = io(`${SOCKET_URL}`,{
             withCredentials: true,
             extraHeaders: {
